@@ -1,7 +1,16 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+### dotenv ###
+.env
 
-# dependencies
-/node_modules
+### react ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
 /.pnp
 .pnp.js
 
@@ -11,8 +20,6 @@
 # production
 /build
 
-# misc
-.DS_Store
 .env.local
 .env.development.local
 .env.test.local
