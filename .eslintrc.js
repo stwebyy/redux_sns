@@ -85,14 +85,6 @@ module.exports = {
         extensions: ['.jsx', '.tsx'],
       },
     ],
-    'react/jsx-props-no-spreading': [
-      'error',
-      {
-        html: 'enforce',
-        custom: 'enforce',
-        explicitSpread: 'ignore',
-      },
-    ],
     'react/react-in-jsx-scope': 'off',
     'prefer-arrow/prefer-arrow-functions': [
       'error',
@@ -108,6 +100,10 @@ module.exports = {
         devDependencies: true, // devDependenciesのimportを許可
         optionalDependencies: false,
       },
+    ],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      { components: ['Link'], specialLink: ['to'] },
     ],
   },
   overrides: [
